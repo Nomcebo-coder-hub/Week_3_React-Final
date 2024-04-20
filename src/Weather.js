@@ -7,7 +7,7 @@ export default function Weather(props) {
       <li>Description:</li>
       <li>Humidity:</li>
       <li>Wind:</li>
-      <li>Temperature:</li>
+      <li></li>
     </ul>
   );
 }
