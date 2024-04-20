@@ -4,7 +4,11 @@ import axios from "axios";
 export default function Weather(props) {
   return (
     <ul>
-      <li></li>
+      <li>Temperature:</li>
+      <li>Description:</li>
+      <li>Humidity:</li>
+      <li>Wind:</li>
+      <li>Temperature:</li>
     </ul>
   );
 }
