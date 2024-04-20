@@ -3,10 +3,10 @@ import React, { useState } from "react";
 export default function Weather(props) {
   return (
     <ul>
-      <li>Temperature: {temperature}</li>
+      <li>Temperature:</li>
       <li>Description:</li>
-      <li>Humidity: {humidity}</li>
-      <li>Wind: {wind - speed}</li>
+      <li>Humidity:</li>
+      <li>Wind:</li>
       <li></li>
     </ul>
   );
