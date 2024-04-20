@@ -1,13 +1,10 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom";
+import styles from "./styles.css";
 
-import App from "./App";
+function App() {
+  return <h1>Weather Search Engine</h1>;
+}
 
 const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
-
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+ReactDOM.render(<App />, rootElement);
