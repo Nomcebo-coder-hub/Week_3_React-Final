@@ -5,8 +5,12 @@ import SearchEngine from "./SearchEngine";
 import "./styles.css";
 
 function App() {
-  return <h1>Weather Search Engine</h1>;
-  <SearchEngine />;
+  return (
+    <div className="App">
+      <h1>Weather Search Engine</h1>
+      <SearchEngine />
+    </div>
+  );
 }
 
 const rootElement = document.getElementById("root");
