@@ -10,7 +10,7 @@ export default function SearchEngine() {
     setLoaded(true);
     setWeather({
       temperature: response.data.main.temp,
-      wind: 10,
+      wind: response.data.wind.speed,
       humidity: 90,
       icon: "",
     });
