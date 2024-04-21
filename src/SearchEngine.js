@@ -22,7 +22,7 @@ export default function SearchEngine() {
   }
 
   if (loaded) {
-    return "Loaded";
+    return temperature;
   } else {
     return (
       <form onSubmit={handleSubmit}>
