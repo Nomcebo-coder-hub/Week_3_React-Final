@@ -19,10 +19,14 @@ export default function SearchEngine() {
     setCity(event.target.value);
   }
 
-  return (
-    <form onSubmit={handleSubmit}>
-      <input type="search" placeholder="Enter a city" />
-      <input type="submit" value="Search" />
-    </form>
-  );
+  if (loaded) {
+    return "Loaded";
+  } else {
+    return (
+      <form onSubmit={handleSubmit}>
+        <input type="search" placeholder="Enter a city" />
+        <input type="submit" value="Search" />
+      </form>
+    );
+  }
 }
