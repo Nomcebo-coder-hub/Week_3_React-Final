@@ -4,6 +4,10 @@ import axios from "axios";
 export default function SearchEngine() {
   const [city, setCity] = useState("");
 
+  function displayWeather(response) {
+    console.log(response.data);
+  }
+
   function handleSubmit(event) {
     event.preventDefault();
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.city}&key=fbef01f4et1b02o0d25c27210a43ef3f&units=metric`;
