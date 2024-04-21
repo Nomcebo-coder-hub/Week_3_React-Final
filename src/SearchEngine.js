@@ -1,19 +1,14 @@
 import React from "react";
-import Weather from "./Weather";
 
-
-export default function App() {
+export default function SearchEngine() {
   function handleSubmit(event) {
     event.preventDefault();
-    return <Weather />;
   }
 
   return (
-    <div className="SearchEngine">
-      <form onSubmit={handleSubmit}>
-        <input type="search" placeholder="Enter a city" />
-        <input type="submit" value="Search" />
-      </form>
-    </div>
+    <form onSubmit=[handleSubmit]>
+      <input type="search" placeholder="Enter a city" />
+      <input type="submit" value="Search" />
+    </form>
   );
 }
