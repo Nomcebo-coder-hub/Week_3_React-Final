@@ -3,6 +3,7 @@ import axios from "axios";
 
 export default function SearchEngine() {
   const [city, setCity] = useState("");
+  const [loaded, setLoaded] = useState(false);
 
   function displayWeather(response) {
     console.log(response.data.main.temp);
