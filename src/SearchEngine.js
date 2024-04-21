@@ -6,6 +6,7 @@ export default function SearchEngine() {
   const [loaded, setLoaded] = useState(false);
 
   function displayWeather(response) {
+    setLoaded(true);
     console.log(response.data.main.temp);
   }
 
