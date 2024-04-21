@@ -21,14 +21,16 @@ export default function SearchEngine() {
     setCity(event.target.value);
   }
 
+  let form = (
+    <form onSubmit={handleSubmit}>
+      <input type="search" placeholder="Enter a city" onChange={updateCity} />
+      <button type="submit">Search</button>
+    </form>
+  );
+
   if (loaded) {
     return temperature;
   } else {
-    return (
-      <form onSubmit={handleSubmit}>
-        <input type="search" placeholder="Enter a city" onChange={updateCity} />
-        <button type="submit">Search</button>
-      </form>
-    );
+    return form;
   }
 }
