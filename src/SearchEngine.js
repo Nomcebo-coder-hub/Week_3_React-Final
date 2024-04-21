@@ -8,7 +8,7 @@ export default function SearchEngine() {
 
   function displayWeather(response) {
     setLoaded(true);
-    console.log(response.data.main.temp);
+    setTemperature(response.data.main.temp);
   }
 
   function handleSubmit(event) {
