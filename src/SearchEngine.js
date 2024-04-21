@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 export default function SearchEngine() {
+  const [city, setCity] = useState("");
+
   function handleSubmit(event) {
     event.preventDefault();
   }
