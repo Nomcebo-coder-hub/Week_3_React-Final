@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import SearchEngine from "./SearchEngine";
-import Weather from "./Weather";
 
 import "./styles.css";
 
