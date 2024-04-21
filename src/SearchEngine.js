@@ -37,7 +37,13 @@ export default function SearchEngine() {
     return (
       <div>
         {form}
-        {temperature}
+        <ul>
+          <li>Temperature:{weather.temperature}°C</li>
+          <li>Temperature:{weather.temperature}°C</li>
+          <li>Temperature:{weather.temperature}°C</li>
+          <li>Temperature:{weather.temperature}°C</li>
+          <li>Temperature:{weather.temperature}°C</li>
+        </ul>
       </div>
     );
   } else {
