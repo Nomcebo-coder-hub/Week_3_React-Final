@@ -11,7 +11,7 @@ export default function SearchEngine() {
     setWeather({
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
-      humidity: 90,
+      humidity: response.data.main.humidity,
       icon: "",
     });
   }
