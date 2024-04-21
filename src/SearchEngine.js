@@ -8,7 +8,12 @@ export default function SearchEngine() {
 
   function displayWeather(response) {
     setLoaded(true);
-    setTemperature(response.data.main.temp);
+    setWeather({
+      temperature: response.data.main.temp,
+      wind: 10,
+      humidity: 90,
+      icon: "",
+    });
   }
 
   function handleSubmit(event) {
