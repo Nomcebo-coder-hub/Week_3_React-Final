@@ -24,7 +24,7 @@ export default function SearchEngine() {
   } else {
     return (
       <form onSubmit={handleSubmit}>
-        <input type="search" placeholder="Enter a city" />
+        <input type="search" placeholder="Enter a city" onChange={updateCity} />
         <input type="submit" value="Search" />
       </form>
     );
