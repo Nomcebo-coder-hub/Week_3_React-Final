@@ -29,7 +29,12 @@ export default function SearchEngine() {
   );
 
   if (loaded) {
-    return temperature;
+    return (
+      <div>
+        {form}
+        {temperature}
+      </div>
+    );
   } else {
     return form;
   }
