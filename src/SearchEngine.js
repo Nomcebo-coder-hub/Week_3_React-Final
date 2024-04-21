@@ -7,6 +7,10 @@ export default function SearchEngine() {
     event.preventDefault();
   }
 
+  function updateCity(event) {
+    setCity(event.target.value);
+  }
+
   return (
     <form onSubmit={handleSubmit}>
       <input type="search" placeholder="Enter a city" />
