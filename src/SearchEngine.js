@@ -12,7 +12,7 @@ export default function SearchEngine() {
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
-      icon: "",
+      icon: `https://openweathermap.org/img/wn/10d@2x.png`,
     });
   }
 
