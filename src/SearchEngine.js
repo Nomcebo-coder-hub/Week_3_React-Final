@@ -6,7 +6,7 @@ export default function SearchEngine() {
   }
 
   return (
-    <form onSubmit=[handleSubmit]>
+    <form onSubmit={handleSubmit}>
       <input type="search" placeholder="Enter a city" />
       <input type="submit" value="Search" />
     </form>
