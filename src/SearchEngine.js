@@ -5,7 +5,7 @@ export default function SearchEngine() {
   const [city, setCity] = useState("");
 
   function displayWeather(response) {
-    console.log(response.data);
+    console.log(response.data.main.temp);
   }
 
   function handleSubmit(event) {
