@@ -8,6 +8,7 @@ export default function SearchEngine() {
 
   function displayWeather(response) {
     setLoaded(true);
+    console.log(response.data);
     setWeather({
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
@@ -40,11 +41,11 @@ export default function SearchEngine() {
         {form}
         <ul>
           <li>Temperature: {Math.round(weather.temperature)}°C</li>
-          <li>Description: {weather.description}°C</li>
+          <li>Description: {weather.description}</li>
           <li>Humidity: {weather.humidity}%</li>
           <li>Wind: {weather.wind}km</li>
           <li>
-            <img src={weather.icon} alt="Weather Icon" />
+            <img src={weather.icon} alt={weather.description} />
           </li>
         </ul>
       </div>
