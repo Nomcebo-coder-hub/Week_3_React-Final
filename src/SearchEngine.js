@@ -8,7 +8,6 @@ export default function SearchEngine() {
 
   function displayWeather(response) {
     setLoaded(true);
-    console.log(response.data);
     setWeather({
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
