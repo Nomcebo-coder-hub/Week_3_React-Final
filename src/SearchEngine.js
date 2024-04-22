@@ -12,7 +12,7 @@ export default function SearchEngine() {
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
-      icon: `https://openweathermap.org/img/wn/10d@2x.png`,
+      icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 
@@ -38,9 +38,9 @@ export default function SearchEngine() {
       <div>
         {form}
         <ul>
-          <li>Temperature:{weather.temperature}°C</li>
-          <li>Temperature:{weather.temperature}°C</li>
-          <li>Temperature:{weather.temperature}°C</li>
+          <li>Temperature: {Math.round(weather.temperature)}°C</li>
+          <li>Humidity: {weather.humidity}%</li>
+          <li>Wind: {weather.wind}km</li>
           <li>Temperature:{weather.temperature}°C</li>
           <li>Temperature:{weather.temperature}°C</li>
         </ul>
